@@ -28,7 +28,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val lista = listOf<String>("Luana","Lewis", "Kiwi", "Wingu")
+        val lista = listOf(
+            Mensagem("Luana", "Olá", "11:11"),
+            Mensagem("Lewis", "Oi", "14:13"),
+            Mensagem("Kiwi", "Kreee", "14:10"))
 
         rvLista = binding.rvLista
         rvLista.adapter = MensagemAdapter(lista)

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 class MensagemAdapter (
-    private val lista:List<String>
+    private val lista:List<Mensagem>
 ) : Adapter<MensagemAdapter.MensagemViewHolder>() {
 
 
@@ -39,8 +39,10 @@ class MensagemAdapter (
     }
 
     override fun onBindViewHolder(holder: MensagemViewHolder, position: Int) {
-        val nome = lista[position]
-        holder.textNome.text = nome
+        val mensagem = lista[position]
+        holder.textNome.text = mensagem.nome
+        holder.textNome.text = mensagem.ultimaMensagem
+        holder.textNome.text = mensagem.horario
 
     }
 }
