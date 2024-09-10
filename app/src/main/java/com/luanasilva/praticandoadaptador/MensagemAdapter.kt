@@ -41,8 +41,8 @@ class MensagemAdapter (
     override fun onBindViewHolder(holder: MensagemViewHolder, position: Int) {
         val mensagem = lista[position]
         holder.textNome.text = mensagem.nome
-        holder.textNome.text = mensagem.ultimaMensagem
-        holder.textNome.text = mensagem.horario
+        holder.textUltima.text = mensagem.ultimaMensagem
+        holder.textHorario.text = mensagem.horario
 
     }
 }
